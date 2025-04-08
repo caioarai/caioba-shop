@@ -1,12 +1,26 @@
-# React + Vite
+# 🛒 Projeto Catálogo de Produtos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto desenvolvido com **React** e **CSS puro**, que consome uma **API pública** para exibir uma lista de produtos. Ao clicar em um item, o usuário pode visualizar suas **especificações detalhadas**.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React](https://reactjs.org/)
+- CSS (sem frameworks)
+- API pública (nome da API pode ser inserido aqui)
 
-## Expanding the ESLint configuration
+## ✨ Funcionalidades
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Listagem de produtos vinda de uma API pública
+- Exibição de detalhes ao clicar em um produto
+- Interface simples, funcional e responsiva
+
+## 📸 Preview
+
+
+## 📂 Como rodar o projeto
+
+```bash
+git clone https://github.com/caioarai/exercicios-react.git
+cd exercicios-react
+npm install
+npm run dev
