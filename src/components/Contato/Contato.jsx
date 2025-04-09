@@ -1,3 +1,4 @@
+import React from 'react';
 import { CiInstagram, CiMail, CiPhone } from 'react-icons/ci';
 import styles from './Contato.module.css';
 

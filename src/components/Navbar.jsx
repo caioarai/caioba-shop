@@ -1,3 +1,4 @@
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.css';
 
@@ -9,7 +10,7 @@ const Navbar = () => {
           <NavLink to="/" className={styles.brand}>
             <img src="/logo_caioba.png" alt="Logo da loja" />
           </NavLink>
-          <h1>CAIOBA'S SHOP</h1>
+          <h1>CAIOBA&apos;S SHOP</h1>
         </span>
         <ul className={styles.links_list}>
           <li>

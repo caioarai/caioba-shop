@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useState } from 'react';
 import styles from './Produtos.module.css';
 import { Link } from 'react-router-dom';

@@ -1,3 +1,4 @@
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import styles from './Produto.module.css';
 import { useEffect, useState } from 'react';
@@ -10,6 +11,8 @@ const Produto = () => {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+
     async function fetchProduto(id) {
       try {
         setLoading(true);

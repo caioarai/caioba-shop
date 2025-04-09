@@ -48,7 +48,7 @@
 }
 
 @media (max-width: 648px){
-  .navbar{
+  .container{
     flex-direction: column;
   }
 
