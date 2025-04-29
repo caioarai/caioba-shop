@@ -5,8 +5,8 @@ Este é um projeto desenvolvido com **React** e **CSS puro**, que consome uma **
 ## 🚀 Tecnologias Utilizadas
 
 - [React](https://reactjs.org/)
-- CSS (sem frameworks)
-- API pública (nome da API pode ser inserido aqui)
+- Bootstrap
+- API pública de produtos (https://dummyjson.com/docs)
 
 ## ✨ Funcionalidades
 
@@ -14,13 +14,11 @@ Este é um projeto desenvolvido com **React** e **CSS puro**, que consome uma **
 - Exibição de detalhes ao clicar em um produto
 - Interface simples, funcional e responsiva
 
-## 📸 Preview
-
 
 ## 📂 Como rodar o projeto
 
 ```bash
-git clone https://github.com/caioarai/exercicios-react.git
-cd exercicios-react
+git clone https://github.com/caioarai/caioba-shop.git
+cd caioba-shop
 npm install
 npm run dev
