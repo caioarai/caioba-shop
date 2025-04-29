@@ -1,0 +1,52 @@
+.login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #007d7e, #005f60);
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.loginForm {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007d7e;
+  margin-bottom: 1.5rem;
+}
+
+  .loginForm label {
+    font-weight: 500;
+    color: #333;
+  }
+
+.loginForm input {
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.registerLink {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.registerLink a {
+  color: #007d7e;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.registerLink a:hover {
+  text-decoration: underline;
+}

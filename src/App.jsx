@@ -6,6 +6,8 @@ import Footer from './components/Footer';
 import Produtos from './components/Produtos/Produtos';
 import Contato from './components/Contato/Contato';
 import Produto from './components/Produto/Produto';
+import Login from './components/Login/Login';
+import Register from './components/Register/Register';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
         <div className="container">
           <Routes>
             <Route path="/" element={<Produtos />}></Route>
+            <Route path="/register" element={<Register />}></Route>
+            <Route path="/login" element={<Login />}></Route>
             <Route path="/produto/:id" element={<Produto />}></Route>
             <Route path="/contato" element={<Contato />}></Route>
           </Routes>

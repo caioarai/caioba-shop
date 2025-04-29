@@ -34,13 +34,30 @@
   display: flex;
 }
 
+.links_list li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links_list .login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .links_list li a{
   margin-left: .8em;
   transition: .5s;
 }
 
-.links_list a:hover{
-  color: #bbb;
+.links_list svg {
+  font-size: 1.8rem;
+  color: black;
+}
+
+.links_list a:hover, .login:hover{
+  color: #bbb !important;
 }
 
 .active{

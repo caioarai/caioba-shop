@@ -16,7 +16,7 @@ const Produto = () => {
     async function fetchProduto(id) {
       try {
         setLoading(true);
-        const response = await fetch(`https://fakestoreapi.com/products/${id}`);
+        const response = await fetch(`https://dummyjson.com/products/${id}`);
         const json = await response.json();
 
         setProduto(json);
@@ -35,7 +35,9 @@ const Produto = () => {
   return (
     <section className={styles.product}>
       <div className={styles.product_image}>
-        {<img src={produto.image} alt={produto.title} />}
+        {produto.images.map((image, key) => (
+          <img key={key} src={image} alt={produto.title} />
+        ))}
       </div>
       <div className={styles.product_description}>
         <h1>{produto.title}</h1>

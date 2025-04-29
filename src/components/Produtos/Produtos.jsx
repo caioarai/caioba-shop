@@ -7,9 +7,9 @@ import Loader from '../Loader';
 const Produtos = () => {
   const [produtos, setProdutos] = useState(null);
   useEffect(() => {
-    fetch('https://fakestoreapi.com/products')
+    fetch('https://dummyjson.com/products')
       .then((response) => response.json())
-      .then((data) => setProdutos(data));
+      .then((data) => setProdutos(data.products));
   }, []);
 
   if (produtos == null) return <Loader />;
@@ -22,7 +22,7 @@ const Produtos = () => {
           key={produto.id}
           className={styles.card}
         >
-          <img src={produto.image} alt={produto.title} />
+          <img src={produto.images[0]} alt={produto.title} />
           <h2 className={styles.title}>{produto.title}</h2>
         </Link>
       ))}
