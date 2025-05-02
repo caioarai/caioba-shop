@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import styles from './Produtos.module.css';
 import { Link } from 'react-router-dom';
-import Loader from '../Loader';
+import Loader from '../../components/Loader';
 
 const Produtos = () => {
   const [produtos, setProdutos] = useState(null);

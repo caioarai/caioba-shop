@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import styles from './Produto.module.css';
 import { useEffect, useState } from 'react';
-import Loader from '../Loader';
+import Loader from '../../components/Loader';
 
 const Produto = () => {
   const { id } = useParams();

@@ -2,8 +2,10 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.css';
 import { CiLogin } from 'react-icons/ci';
+import { useUser } from '../context/UserContext';
 
 const Navbar = () => {
+  const { user } = useUser();
   return (
     <nav className={styles.navbar}>
       <div className={styles.container}>
@@ -20,11 +22,13 @@ const Navbar = () => {
           <li>
             <NavLink to="/contato">CONTATO</NavLink>
           </li>
-          <li>
-            <NavLink to="/login" className={styles.login}>
-              ENTRAR <CiLogin />
-            </NavLink>
-          </li>
+          {!user && (
+            <li>
+              <NavLink to="/login" className={styles.login}>
+                ENTRAR <CiLogin />
+              </NavLink>
+            </li>
+          )}
         </ul>
       </div>
     </nav>
